@@ -11,6 +11,7 @@ logging.basicConfig(
 
 
 class Defaults:
+    arduino_port = 'COM5'
     timeout = 5
 
 

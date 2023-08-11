@@ -9,7 +9,7 @@ from config import Defaults
 class Interface:
     logging.info('Arduino Startup')
 
-    board = pyfirmata.Arduino('COM5')
+    board = pyfirmata.Arduino(Defaults.arduino_port)
     _ = pyfirmata.util.Iterator(board)
     _.start()
     pins = {
